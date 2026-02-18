@@ -21,6 +21,7 @@ body {
   border: 2px solid #7e6551;
   border-radius: 12px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -73,6 +74,7 @@ header h3 {
 .nav {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: #936b4a;
@@ -180,3 +182,136 @@ li a:hover {
   cursor: pointer;
 }
 
+/* Responsive Styles */
+
+/* Tablet and smaller (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  .container_head {
+    max-width: 100%;
+    min-height: auto;
+    padding: 15px;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  header h3 {
+    font-size: 1.1rem;
+  }
+
+  .nav {
+    padding: 8px;
+  }
+
+  ul {
+    gap: 15px;
+  }
+
+  .task-card {
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px 15px;
+  }
+
+  .task-actions {
+    width: 100%;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .task-info {
+    width: 100%;
+  }
+}
+
+/* Mobile devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .container_head {
+    padding: 10px;
+    border-width: 1px;
+  }
+
+  header h3 {
+    font-size: 1rem;
+  }
+
+  .task {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 8px 12px;
+  }
+
+  .para {
+    font-size: 0.85rem;
+  }
+
+  .nav {
+    margin-bottom: 10px;
+  }
+
+  ul {
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  ul li a {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+
+  .task-list {
+    gap: 8px;
+  }
+
+  .task-card {
+    padding: 10px 12px;
+    border-radius: 15px;
+  }
+
+  .task-info h3 {
+    font-size: 14px;
+  }
+
+  .task-info p {
+    font-size: 11px;
+  }
+
+  .task-actions {
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .action-icon {
+    font-size: 0.9rem;
+  }
+
+  .dlt_btn {
+    font-size: small;
+    padding: 4px 8px;
+  }
+
+  .check-circle {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Small desktop (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .container_head {
+    max-width: 600px;
+  }
+}
