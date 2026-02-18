@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fdf4dc;
+  padding: 20px;
+}
+
+.head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: auto;
+    border: 2px solid #7e6551 ;
+    font-weight: bold;
+    color: #7e6551;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    
+}
+
+i {
+  color: #7e6551;
+}
+
+i:hover {
+     color: #5f4c3d;
+}
+
+img {
+  height: auto;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top:30px ;
+  border-radius: 20%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+#Email,
+#Password,
+#Age,
+#Name {
+  color: red;
+}
+
+.email,
+.password,
+.Age,
+.Name {
+  border-radius: 10px;
+  width: 350px;
+  height: 40px;
+  padding: 7px;
+  outline: none;
+  border: 1px solid #7e6551;
+  background-color: rgba(181, 177, 177,0.5)
+}
+
+input:focus {
+  border: 1.5px solid #7e6551 ;
+  transition: all 0.1s;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #7e6551;
+  color: white;
+  border: none;
+  border-radius: 40px;
+  width: 350px;
+  height: 40px;
+  font-weight: bold;
+  margin-top: 180px;
+}
+
+button:hover {
+  background-color: #5f4c3d;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
