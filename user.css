@@ -15,7 +15,6 @@ body {
 
 .head {
     display: flex;
-    flex-wrap: wrap;
     justify-content:center;
     flex-direction: column;
     align-items: center;
@@ -26,14 +25,16 @@ body {
     color: #7e6551;
     border-radius: 12px;
     padding: 20px;
+    max-width: 100%;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 100px;
-    
+    gap: 20px;   
+    width: 100%;
+    min-width: 200px;
 }
 
 i {
@@ -47,9 +48,6 @@ i:hover {
 img {
   height: auto;
   width: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top:30px ;
   border-radius: 20%;
   overflow: hidden;
@@ -68,6 +66,8 @@ img {
 .Age,
 .Name {
   border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
   width: 350px;
   height: 40px;
   padding: 7px;
