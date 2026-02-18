@@ -428,7 +428,7 @@ li a:hover {
   }
 }
 
-/* Medium phones (375px - 389px) 
+/* Medium phones (375px - 389px) */
 @media screen and (min-width: 375px) and (max-width: 389px) {
   body {
     padding: 8px;
@@ -521,9 +521,9 @@ li a:hover {
     width: 16px;
     height: 16px;
   }
-}*/
+}
 
-/* Small phones (360px - 374px) 
+/* Small phones (360px - 374px) */
 @media screen and (min-width: 360px) and (max-width: 374px) {
   body {
     padding: 8px;
@@ -616,7 +616,7 @@ li a:hover {
     width: 15px;
     height: 15px;
   }
-}*/
+}
 
 /* Very small phones (320px - 359px) */
 /* @media screen and (min-width: 320px) and (max-width: 359px) {
@@ -714,7 +714,7 @@ li a:hover {
 }
 
 /* Extra small phones (under 320px) */
- /*@media screen and (max-width: 319px) {
+ @media screen and (max-width: 319px) {
   body {
     padding: 5px;
   }
@@ -806,4 +806,4 @@ li a:hover {
     width: 12px;
     height: 12px;
   }
-} */
+} 
