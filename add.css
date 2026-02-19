@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fdf4dc;
+  padding: 20px;
+}
+
+.add-container {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: auto;
+    border: 2px solid #7e6551 ;
+    font-weight: bold;
+    color: #7e6551;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    height: auto;
+    min-width: 200px;
+    margin-bottom: 2rem;
+}
+
+i {
+    color: #7e6551;
+}
+
+i:hover {
+    color: #5f4c3d;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#text{
+    color: #ff0000;
+}
+
+#date {
+     color: #ff0000;
+     margin-top: 1rem;
+}
+
+#none {
+    border: 1px solid #7e6551;
+    text-align: left;
+    width: 100%;
+    height: 6rem;
+    padding: 15px;
+    border-radius: 1rem;
+    background-color: rgba(181, 177, 177,0.5);
+}
+
+#none:focus {
+  border: 1.5px solid #7e6551;
+  transition: all 0.1s;
+  outline: none;
+}
+
+input:focus {
+  border: 1.5px solid #7e6551;
+  transition: all 0.1s;
+  outline: none;
+}
+
+.suggestion {
+    background-color: rgba(128, 12, 128,0.5);
+    border: 1px solid   rgba(128, 12, 128,0.8);
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 8px;
+    width: fit-content;
+}
+
+.suggestion:hover {
+    border: 2px solid rgba(128, 12, 128,0.8);
+    color: white;
+    background-color: rgba(128, 12, 128,0.5);
+}
+
+.enhance {
+    background-color: rgba(131, 164, 230, 0.5);
+    border: 1px solid  rgba(148, 175, 230, 0.8);
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 8px;
+    width: fit-content;
+}
+
+.enhance:hover {
+    border: 2px solid rgba(148, 175, 230, 0.8);
+    color: white;
+    background-color: rgba(131, 164, 230, 0.5);
+}
+
+.btn1 {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.date {
+    border: 1px solid #7e6551;
+    width: 100%;
+    height: 2rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    background-color: rgba(181, 177, 177,0.5);
+}
+
+.add_task {
+    background-color: #7e6551;
+    color: white;
+    border: 1px solid #7e6551;
+    border-radius: 20px;
+    height: 2rem;
+    padding: 5px;
+    margin-top: 8rem;
+    width: 100%;
+}
+
+.add_task:hover{
+  background-color: #5f4c3d;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
