@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,27 +14,27 @@ body {
 }
 
 .head {
-    display: flex;
-    justify-content:center;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    height: auto;
-    border: 2px solid #7e6551 ;
-    font-weight: bold;
-    color: #7e6551;
-    border-radius: 12px;
-    padding: 20px;
-    max-width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  height: auto;
+  border: 2px solid #7e6551;
+  font-weight: bold;
+  color: #7e6551;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 100%;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;   
-    width: 100%;
-    min-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  min-width: 200px;
 }
 
 i {
@@ -42,13 +42,13 @@ i {
 }
 
 i:hover {
-     color: #5f4c3d;
+  color: #5f4c3d;
 }
 
 img {
   height: auto;
   width: 100px;
-  margin-top:30px ;
+  margin-top: 30px;
   border-radius: 20%;
   overflow: hidden;
   object-fit: cover;
@@ -73,14 +73,13 @@ img {
   padding: 7px;
   outline: none;
   border: 1px solid #7e6551;
-  background-color: rgba(181, 177, 177,0.5)
+  background-color: rgba(181, 177, 177, 0.5);
 }
 
 input:focus {
-  border: 1.5px solid #7e6551 ;
+  border: 1.5px solid #7e6551;
   transition: all 0.1s;
 }
-
 
 button {
   margin-top: 20px;
@@ -98,4 +97,96 @@ button:hover {
   background-color: #5f4c3d;
   transition: 0.3s ease;
   cursor: pointer;
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  .head {
+    padding: 15px;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  header {
+    gap: 15px;
+    min-width: 150px;
+  }
+
+  img {
+    width: 80px;
+  }
+
+  .email,
+  .password,
+  .Age,
+  .Name {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 150px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 580px) {
+  body {
+    padding: 10px;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .head {
+    padding: 12px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  header {
+    gap: 10px;
+    min-width: 100%;
+    justify-content: space-between;
+  }
+
+  header h3 {
+    font-size: 1rem;
+  }
+
+  i {
+    font-size: 1.2rem;
+  }
+
+  img {
+    width: 70px;
+    margin-top: 20px;
+  }
+
+  .name_age {
+    width: 100%;
+  }
+
+  .email,
+  .password,
+  .Age,
+  .Name {
+    width: 100%;
+    max-width: 100%;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 120px;
+    height: 38px;
+    font-size: 14px;
+  }
 }
